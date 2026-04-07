@@ -1,0 +1,16 @@
+{
+	"name": "effect-lsp-leaking-requirements-middleware-repro",
+	"version": "0.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"prepare": "effect-language-service patch && effect-tsgo patch",
+		"check": "effect-language-service diagnostics --project tsconfig.json --severity error,warning --format pretty domain.service.ts"
+	},
+	"devDependencies": {
+		"@effect/language-service": "latest",
+		"@effect/rpc": "^0.73.0",
+		"effect": "^3.19.0",
+		"typescript": "^5.9.0"
+	}
+}

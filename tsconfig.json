@@ -1,0 +1,27 @@
+{
+	"compilerOptions": {
+		"strict": true,
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"target": "ES2022",
+		"noEmit": true,
+		"skipLibCheck": true,
+		"plugins": [
+			{
+				"name": "@effect/language-service",
+				"diagnosticSeverity": {
+					"leakingRequirements": "warning"
+				},
+				"keyPatterns": [
+					{
+						"target": "service",
+						"pattern": "default",
+						"skipLeadingPath": ["repros/effect-lsp-leaking-requirements-middleware/"]
+					}
+				],
+				"extendedKeyDetection": true
+			}
+		]
+	},
+	"include": ["*.ts"]
+}
