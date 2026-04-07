@@ -19,7 +19,7 @@ With `greet` + `farewell`, `pnpm run check` (or the command below) should report
 pnpm install
 ```
 
-(`prepare` runs `effect-language-service patch` and `effect-tsgo patch` for TypeScript diagnostics.)
+(`prepare` runs `effect-language-service patch` so TypeScript picks up Effect diagnostics.)
 
 ## How to see the diagnostic
 
