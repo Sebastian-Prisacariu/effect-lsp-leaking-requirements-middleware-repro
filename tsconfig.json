@@ -11,15 +11,7 @@
 				"name": "@effect/language-service",
 				"diagnosticSeverity": {
 					"leakingRequirements": "warning"
-				},
-				"keyPatterns": [
-					{
-						"target": "service",
-						"pattern": "default",
-						"skipLeadingPath": ["repros/effect-lsp-leaking-requirements-middleware/"]
-					}
-				],
-				"extendedKeyDetection": true
+				}
 			}
 		]
 	},
